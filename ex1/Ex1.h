@@ -9,12 +9,15 @@
 #include <QtWidgets/QSlider>
 
 class Ex1 : public QMainWindow{
+    Q_OBJECT
 private:
     QProgressBar *qProgressBar;
     QSlider *qSlider;
 public:
     Ex1(QWidget* parent = nullptr);
 
+public slots:
+    //void slotSetValue(int value);
 };
 
 
