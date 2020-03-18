@@ -14,8 +14,6 @@ Ex1::Ex1(QWidget *parent) :QMainWindow(parent) {
     qProgressBar = new QProgressBar(this);
     qSlider = new QSlider(Qt::Horizontal, this);
 
-    qProgressBar->text() = "o";
-
     qVBoxLayout->addWidget(qProgressBar);
     qVBoxLayout->addWidget(qSlider);
 
@@ -23,6 +21,6 @@ Ex1::Ex1(QWidget *parent) :QMainWindow(parent) {
     setCentralWidget(parent1);
 
     QObject::connect(qSlider, SIGNAL(valueChanged(int)), qProgressBar, SLOT(setValue(int)));
-    //emit slotSetValue(qSlider->)
+
 }
 

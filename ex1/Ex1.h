@@ -17,7 +17,7 @@ public:
     Ex1(QWidget* parent = nullptr);
 
 public slots:
-    //void slotSetValue(int value);
+
 };
 
 
