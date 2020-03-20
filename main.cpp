@@ -6,7 +6,7 @@
 
 int main(int argc, char** argv) {
     QApplication app(argc, argv);
-    Ex1 ex1;
+    Ex2 ex1;
     ex1.show();
     return app.exec();
     return 0;
